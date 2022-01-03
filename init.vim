@@ -58,7 +58,7 @@ Plug 'chr4/nginx.vim' " syntax highlighting nginx
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' } " syntax highlighting golang
 " ================= Functionalities ================= "
 
-" autocompletion using ncm2 
+" autocompletion using ncm2
 Plug 'ncm2/ncm2' " dependency of ncm2
 Plug 'roxma/nvim-yarp' " awesome autocomplete plugin
 Plug 'othree/csscomplete.vim' " css autocomplete for ncm2
@@ -75,7 +75,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'unkiwii/vim-nerdtree-sync' " for synchronizing current open file with NERDtree
 
 " autocomplete for javascript
-" NOTE: :CocInstall coc-json coc-tsserver coc-vetur coc-docker coc-go, run in command mode after installing coc.nvim
+" NOTE: :CocInstall coc-json coc-tsserver coc-vetur coc-docker coc-go coc-swagger, run in command mode after installing coc.nvim
 " more information: https://github.com/neoclide/coc.nvim
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-commentary' " commentary in vim
@@ -168,8 +168,8 @@ let g:rnvimr_bw_enable = 1
 let g:rnvimr_ranger_cmd = 'ranger --cmd="set preview_images_method w3m"'
 let g:rnvimr_presets = [{'width': 0.8, 'height': 0.8}]
 
-" path to your python 
-let g:python3_host_prog = '/usr/bin/python3'
+" path to your python
+let g:python3_host_prog = '/usr/local/bin/python3'
 let g:python_host_prog = '/usr/bin/python2'
 
 let NERDTreeShowHidden=1 " show hidden file in nerd tree
@@ -199,7 +199,7 @@ augroup END
 
 " coc.nvim options
 let g:coc_disable_startup_warning = 1
-" posva/vim-vue options 
+" posva/vim-vue options
 let g:vue_pre_processors = 'detect_on_enter'
 
 " NOTE: to customize preview window color in fzf
@@ -208,8 +208,8 @@ let g:vue_pre_processors = 'detect_on_enter'
 " 3. see all list theme : bat --list-themes, run in your terminal
 
 "Border color for fzf
-let g:fzf_layout = 
-      \ {'up':'~90%', 
+let g:fzf_layout =
+      \ {'up':'~90%',
       \ 'window': { 'width': 0.8, 'height': 0.8,'yoffset':0.5,'xoffset': 0.5, 'highlight': 'Todo', 'border': 'sharp' } }
 
 " init vim-python/python-syntax plugin
